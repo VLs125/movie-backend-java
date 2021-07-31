@@ -1,4 +1,4 @@
-package com.movie.model;
+package com.movie.kinopoisk.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

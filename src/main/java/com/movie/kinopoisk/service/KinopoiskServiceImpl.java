@@ -1,7 +1,7 @@
-package com.movie.service;
+package com.movie.kinopoisk.service;
 
-import com.movie.model.Kinopoisk;
-import com.movie.repository.KinopoiskRepository;
+import com.movie.kinopoisk.model.Kinopoisk;
+import com.movie.kinopoisk.repository.KinopoiskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

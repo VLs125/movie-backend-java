@@ -1,6 +1,6 @@
-package com.movie.repository;
+package com.movie.kinopoisk.repository;
 
-import com.movie.model.Kinopoisk;
+import com.movie.kinopoisk.model.Kinopoisk;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.UUID;
 

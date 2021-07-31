@@ -1,5 +1,5 @@
-package com.movie.service;
-import com.movie.model.Kinopoisk;
+package com.movie.kinopoisk.service;
+import com.movie.kinopoisk.model.Kinopoisk;
 import java.util.List;
 import java.util.UUID;
 

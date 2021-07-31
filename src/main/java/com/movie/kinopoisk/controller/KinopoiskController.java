@@ -1,8 +1,8 @@
-package com.movie.controller;
+package com.movie.kinopoisk.controller;
 
 
-import com.movie.model.Kinopoisk;
-import com.movie.service.KinopoiskService;
+import com.movie.kinopoisk.model.Kinopoisk;
+import com.movie.kinopoisk.service.KinopoiskService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
