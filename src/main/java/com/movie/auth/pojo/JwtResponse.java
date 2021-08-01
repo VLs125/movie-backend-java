@@ -25,13 +25,14 @@ public class JwtResponse {
     private String email;
     @Getter
     @Setter
-    private List<Role> roles;
+    private List<String> roles;
 
-    public JwtResponse(String token, UUID id, String username, String email, List<Role> roles) {
+    public JwtResponse(String token, UUID id, String username, String email, List<String> roles) {
         this.token = token;
         this.id = id;
         this.username = username;
         this.email = email;
         this.roles = roles;
     }
+
 }

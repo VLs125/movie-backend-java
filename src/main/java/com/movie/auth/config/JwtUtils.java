@@ -27,7 +27,7 @@ public class JwtUtils {
     }
     public boolean validateJwtToken(String jwt){
         try{
-            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJwt(jwt);
+            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(jwt).getBody().getSubject();
             return true;
         }catch (MalformedJwtException | IllegalArgumentException e){
             System.err.println(e.getMessage());
@@ -35,6 +35,6 @@ public class JwtUtils {
         return false;
     }
     public String getUserNameFromJwtToken (String jwt){
-        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJwt(jwt).getBody().getSubject();
+        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(jwt).getBody().getSubject();
     }
 }

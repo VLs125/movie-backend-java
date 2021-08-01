@@ -17,6 +17,15 @@ import java.util.UUID;
 @UniqueConstraint(columnNames = "email")})
 public class User {
 
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+    public User(){
+
+    }
+
     @Id
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid2")
@@ -55,6 +64,7 @@ public class User {
     joinColumns = @JoinColumn(name="user_id"),
     inverseJoinColumns =  @JoinColumn(name="role_id"))
     private Set<Role> roles = new HashSet<>();
+
 
 
 }

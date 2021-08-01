@@ -9,6 +9,11 @@ import javax.persistence.*;
 @Entity
 @Table(name="roles")
 public class Role {
+    public Role() {}
+
+    public Role(ERoles name) {
+        this.name = name;
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter
