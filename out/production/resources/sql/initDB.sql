@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS movie
+(
+    id    BIGSERIAL PRIMARY KEY ,
+    name  VARCHAR(50) NOT NULL ,
+    rating INT NOT NULL ,
+    img VARCHAR(200)  NOT NULL
+);
